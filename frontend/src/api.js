@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; ✅ Correct backend URL
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 export const fetchProducts = async () => {
   const response = await fetch(API_BASE_URL);
