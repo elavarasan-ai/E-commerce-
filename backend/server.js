@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: "https://product-catalog-mongodb-6fib.onrender.com" }));
+app.use(cors({ origin: "*" }));
 
 app.use(express.json());
 
