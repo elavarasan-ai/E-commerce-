@@ -1,4 +1,5 @@
-const API_BASE_URL = "https://product-catalog-mongodb-nkhd.onrender.com"; // ✅ Correct backend URL
+const API_BASE_URL ="https://product-catalog-mongodb-nkhd.onrender.com/api/products";
+ // ✅ Correct backend URL
 
 export const fetchProducts = async () => {
   const response = await fetch(API_BASE_URL);
