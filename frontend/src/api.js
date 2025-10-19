@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const API_BASE_URL ="https://product-catalog-mongodb-e4ii.onrender.com/api/products";
 
 export const fetchProducts = async () => {
   const response = await fetch(API_BASE_URL);
@@ -15,7 +15,6 @@ export const createProduct = async (product) => {
   if (!response.ok) throw new Error("Failed to create product");
   return response.json();
 };
-
 export const updateProduct = async (id, updatedProduct) => {
   const response = await fetch(`${API_BASE_URL}/${id}`, {
     method: "PUT",
